@@ -1,0 +1,71 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/produkt/domowa-przymierzalnia-okularow-biohac",
+      "destination": "https://biohac.pl/sklep/okulary-blokujace-niebieskie-swiatlo?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/okulary-blokujace-swiatlo-niebieskie-biohac",
+      "destination": "https://biohac.pl/p/okulary-smart-clips?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/okulary-blokujace-swiatlo-niebieskie-biohac-eclipse",
+      "destination": "https://biohac.pl/p/okulary-blokujace-niebieskie-swiatlo-eclipse?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/okulary-biohac-vintage-clips",
+      "destination": "https://biohac.pl/p/okulary-blokujace-niebieskie-swiatlo-z-nakladka-vintage?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/okulary-biohac-smart-clips",
+      "destination": "https://biohac.pl/p/okulary-smart-clips?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/pomaranczowe-nakladki-na-okulary",
+      "destination": "https://biohac.pl/p/nakladka-blokujaca-niebieskie-swiatlo-na-okulary?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/jedwabna-opaska-na-oczy-do-spania-biohac",
+      "destination": "https://biohac.pl/p/opaska-na-oczy-do-spania-unwind?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/okulary-biohac-business",
+      "destination": "https://biohac.pl/p/okulary-business?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/okulary-biohac-classic",
+      "destination": "https://biohac.pl/p/okulary-classic?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/okulary-blokujace-niebieskie-swiatlo-biohac-ovate",
+      "destination": "https://biohac.pl/p/okulary-ovate?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/produkt/okulary-biohac-transparent",
+      "destination": "https://biohac.pl/p/okulary-transparent?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/kategoria/biohacking",
+      "destination": "https://biohac.pl/sklep?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    },
+    {
+      "source": "/jak-zwrocic-produkt-szybkiezwroty",
+      "destination": "https://biohac.pl/jak-zwrocic-produkt?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena",
+      "permanent": true
+    }
+  ]
+}
