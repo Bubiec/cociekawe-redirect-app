@@ -1,13 +1,24 @@
 # Directory Overview
 
-This directory contains a simple static website for the domain `cociekawe.pl`. The purpose of the site is to inform visitors that the domain is for sale and that the original site has moved to a new domain, `biohac.pl`. It also handles redirecting old URLs to their new locations.
+This directory contains a simple static website for the domain `cociekawe.pl`. The site informs visitors that the domain is for sale and that the original store has moved to `biohac.pl`. It is hosted on **Vercel** and handles automatic redirects for old product and category URLs.
 
 # Key Files
 
-*   `index.html`: This is the main landing page. It displays a message indicating that the domain is for sale and that the site has moved. It features a 10-second countdown timer that automatically redirects users to `biohac.pl`. The page is styled using Tailwind CSS and includes custom JavaScript for the timer functionality.
+*   `index.html`: The main landing page with a "Domain for sale" message and a 10-second countdown timer that redirects to `biohac.pl`. Built with Tailwind CSS.
+*   `vercel.json`: The configuration file for Vercel. It contains **301 permanent redirects** with UTM tracking parameters for all old URLs (products, categories, etc.), replacing the previous `.htaccess` logic.
+*   `.htaccess`: Legacy Apache configuration file (kept for historical reference, not used by Vercel).
 
-*   `.htaccess`: This is an Apache server configuration file. It contains a series of `RedirectMatch` and `RewriteRule` directives to permanently redirect (301) specific old product and category URLs from `cociekawe.pl` to their new counterparts on `biohac.pl`. It also appends UTM tracking parameters to the redirect URLs. The file includes basic security settings to deny access to the `.htaccess` file itself, and it configures GZIP compression and browser caching for better performance.
+# Deployment & Domain Setup
+
+The project is deployed on **Vercel** using the `master` branch.
+
+### Domain Configuration (Cyberfolks DNS)
+To point `cociekawe.pl` to Vercel, the following DNS records are set in the Cyberfolks panel:
+*   **A Record (@):** Points to `76.76.21.21` (Vercel IP).
+*   **A Record (www):** Also points to `76.76.21.21` (alternatively CNAME `cname.vercel-dns.com` if supported by the panel).
+
+In the Vercel dashboard, `www.cociekawe.pl` is configured to automatically redirect to the root domain `cociekawe.pl`.
 
 # Usage
 
-The files in this directory are intended to be hosted on a web server configured to handle the `cociekawe.pl` domain. When a user visits the root of the domain, they will see the `index.html` page and be redirected after 10 seconds. If a user tries to access an old URL, the `.htaccess` file will redirect them to the corresponding new page on `biohac.pl`.
+When a user visits `cociekawe.pl`, they see the landing page and are redirected after 10 seconds. Any access to old product or category paths (e.g., `/produkt/...`) is immediately handled by Vercel's edge network via `vercel.json` and redirected to the corresponding page on `biohac.pl`.
