@@ -1,0 +1,68 @@
+# Włączenie mod_rewrite
+RewriteEngine On
+
+# Przekierowania produktów - 301 z UTM
+RedirectMatch 301 ^/produkt/domowa-przymierzalnia-okularow-biohac/?$ https://biohac.pl/sklep/okulary-blokujace-niebieskie-swiatlo?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/okulary-blokujace-swiatlo-niebieskie-biohac/?$ https://biohac.pl/p/okulary-smart-clips?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/okulary-blokujace-swiatlo-niebieskie-biohac-eclipse/?$ https://biohac.pl/p/okulary-blokujace-niebieskie-swiatlo-eclipse?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/okulary-biohac-vintage-clips/?$ https://biohac.pl/p/okulary-blokujace-niebieskie-swiatlo-z-nakladka-vintage?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/okulary-biohac-smart-clips/?$ https://biohac.pl/p/okulary-smart-clips?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/pomaranczowe-nakladki-na-okulary/?$ https://biohac.pl/p/nakladka-blokujaca-niebieskie-swiatlo-na-okulary?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/jedwabna-opaska-na-oczy-do-spania-biohac/?$ https://biohac.pl/p/opaska-na-oczy-do-spania-unwind?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/okulary-biohac-business/?$ https://biohac.pl/p/okulary-business?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/okulary-biohac-classic/?$ https://biohac.pl/p/okulary-classic?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/okulary-blokujace-niebieskie-swiatlo-biohac-ovate/?$ https://biohac.pl/p/okulary-ovate?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+RedirectMatch 301 ^/produkt/okulary-biohac-transparent/?$ https://biohac.pl/p/okulary-transparent?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+
+# Przekierowania kategorii
+RedirectMatch 301 ^/kategoria/biohacking/?$ https://biohac.pl/sklep?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+
+# Pozostałe strony
+RedirectMatch 301 ^/jak-zwrocic-produkt-szybkiezwroty/?$ https://biohac.pl/jak-zwrocic-produkt?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena
+
+# Dodatkowe bezpieczeństwo - przekierowanie dla URL-i kończących się na /
+RewriteRule ^produkt/domowa-przymierzalnia-okularow-biohac/$ https://biohac.pl/sklep/okulary-blokujace-niebieskie-swiatlo?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/okulary-blokujace-swiatlo-niebieskie-biohac/$ https://biohac.pl/p/okulary-smart-clips?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/okulary-blokujace-swiatlo-niebieskie-biohac-eclipse/$ https://biohac.pl/p/okulary-blokujace-niebieskie-swiatlo-eclipse?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/okulary-biohac-vintage-clips/$ https://biohac.pl/p/okulary-blokujace-niebieskie-swiatlo-z-nakladka-vintage?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/okulary-biohac-smart-clips/$ https://biohac.pl/p/okulary-smart-clips?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/pomaranczowe-nakladki-na-okulary/$ https://biohac.pl/p/nakladka-blokujaca-niebieskie-swiatlo-na-okulary?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^kategoria/biohacking/$ https://biohac.pl/sklep?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/jedwabna-opaska-na-oczy-do-spania-biohac/$ https://biohac.pl/p/opaska-na-oczy-do-spania-unwind?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/okulary-biohac-business/$ https://biohac.pl/p/okulary-business?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/okulary-biohac-classic/$ https://biohac.pl/p/okulary-classic?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^jak-zwrocic-produkt-szybkiezwroty/$ https://biohac.pl/jak-zwrocic-produkt?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/okulary-blokujace-niebieskie-swiatlo-biohac-ovate/$ https://biohac.pl/p/okulary-ovate?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+RewriteRule ^produkt/okulary-biohac-transparent/$ https://biohac.pl/p/okulary-transparent?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+
+# Ogólne przekierowanie głównej strony sklepu na biohac.pl (opcjonalne)
+# RewriteRule ^sklep/?$ https://biohac.pl/sklep?utm_source=cociekawe&utm_medium=redirect&utm_campaign=domena [R=301,L]
+
+# Ustawienia bezpieczeństwa
+<Files ".htaccess">
+Order allow,deny
+Deny from all
+</Files>
+
+# Kompresja GZIP dla lepszej wydajności
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Cache control dla statycznych plików
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+</IfModule>
